@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="태그의 ID나 class">
+    <meta name="author" content="fkfkfk999"
+    <title>Tag Info</title>
+  </head>
+  <body>
+    <!-- 
+        똑같은 header이 두개 있을 때 나중에 css로 스타일을 주거나 
+        javascript로 이벤트를 제어하고 싶을 때 구분 할 수 있어야 한다.
+        그 방법이 id, class 두가지가 있다.
+        ID는 주민번호와 같다. 하나의 HTML문서에서 단 하나만 부여 가능하고
+        유일한 값에 부여하는 값이다.
+        CLASS는 여러개가 존재할 수 있고 동일한 클래스명을 부여함으로써
+        반복되는 스타일이나 이벤트를 태그에 부여할 수 있다.
+        이 외에 NAME이 존재하는데 이건 후에 웹프로그래밍 언어 사용 시
+        서버로 전송되는 변수명을 의미한다.
+    -->
+    <section>
+          <header id="sectionHeader" class="defaultHeader">
+              <h1>섹션의 헤더안의 제목</h1>
+          </header>
+      </section>
+      <div>
+          <header id="divHeader" class="defaultHeader">디브속의 헤더</header>
+      </div>
+  </body>
+</html>
