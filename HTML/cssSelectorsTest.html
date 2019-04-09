@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>SelectorsTest</title>
+  </head>
+  <style>
+    /* 
+        태그명이나 아이디, 클래스가 아닌 input타입을 지정하는 가상 셀렉터를 사용할 수 있다.
+        개발자와 변수명이 상의 되지 않은 상황에서 사용이 유용하다.
+     */
+    input[type="submit"] {
+      background-color: cornflowerblue;
+    }
+    input[type="text"] {
+      background-color: burlywood;
+    }
+    input[required="required"] {
+      background-color: blueviolet;
+    }
+    input {
+      border: 3px dotted black;
+    }
+    .box {
+      background-color: aquamarine;
+      display: block;
+      height: 133px;
+      border: 2px solid black;
+    }
+    /* 가상 셀렉터 중  마지막 자식노드를 선택한다. */
+    .box:last-child {
+      background-color: gray;
+    }
+    /* 가상 셀렉터 중 3번째 자식노드를 선택 */
+    .box:nth-child(3) {
+      background-color: plum;
+    }
+    /* 여러개으 자식이 있을 경우 2n을 선택하면 2의 배수들을 설정한다. */
+    .box:nth-child(2n) {
+      background-color: wheat;
+    }
+    /* box클래스의 형재인 p를 지정할 수 있다. */
+    .box + p {
+      color: red;
+    }
+    /* 직계자식 선택자이다. */
+    .box > span {
+      color: blue;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box">
+        <input type="text" required="required" />
+        <input type="submit" class="submitBtn" />
+      </div>
+      <div class="box">
+        <span>123</span>
+      </div>
+      <p>123</p>
+    </div>
+  </body>
+</html>
