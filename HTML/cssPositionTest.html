@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Position Test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body,
+        html {
+            height: 100%;
+            /* margin과 padding값을 0으로 설정하는 이유는 브라우저가 가지고 있는 디폴트값을 없애버리기 위함이다. */
+            margin: 0;
+            padding: 0;
+            /* 모든 박스의 position값은 디폴트 값이 static이다.  */
+        }
+
+        body {
+            height: 400%;
+            background-color: antiquewhite;
+        }
+
+        div#staticBox {
+            height: 180px;
+            width: 180px;
+            background-color: lightpink;
+            position: static;
+        }
+
+        div#fixedBox {
+            height: 180px;
+            width: 180px;
+            background-color: aqua;
+            /* fixed는 화면에 고정되어 스크롤이 움직여도 따라다닌다. */
+            position: fixed;
+            /* fixed일 경우 top, bottom, left, right 는 해당 엘리먼트를 모니터상 해당 픽셀의 위치로 고정시킨다. */
+            bottom: 100px;
+            left: 33px;
+        }
+
+        div.outBox {
+            margin-top: 10px;
+            height: 133px;
+            width: 133px;
+            background-color: olive;
+        }
+
+        div#absoluteBox {
+            height: 33px;
+            width: 33px;
+            background-color: goldenrod;
+            /* absolute는 fixed처럼 화면에 붙이는 개념이지만 고정되지는 않아 스크롤을 따라 움직이지는 않는다. */
+            position: absolute;
+            right: 0px;
+        }
+
+        div.outBox2 {
+            margin-top: 10px;
+            height: 133px;
+            width: 133px;
+            /* 
+                만약 부모박스에 relative를 주면 자식과 부모의 관계가 설정된다.
+                자식이 absolute일 경우 관계설정이 없다면 body를 기준으로 움직이는데
+                부모에 relative가 설정되어 있으면 부모가 기준이 되어 좌표가 설정된다.
+             */
+            position: relative;
+            background-color: olive;
+        }
+
+        div#relativeBox {
+            height: 33px;
+            width: 33px;
+            background-color: dodgerblue;
+            position: absolute;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="staticBox"></div>
+    <div id="fixedBox"></div>
+    <div class="outBox">
+        <div id="absoluteBox"></div>
+    </div>
+    <div class="outBox2">
+        <div id="relativeBox"></div>
+    </div>
+</body>
+
+</html>
