@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Test</title>
+    <style>
+        body,
+        html {
+            height: 1000px;
+        }
+
+        div.box {
+            background-color: lawngreen;
+            width: 188px;
+            height: 188px;
+            /* 
+                이대로 진행 할 경우 우리가 일반적으로 쇼핑몰에서 보는 바둑판 형식의 배치를 할려면 margin설정으로
+                힘들게 조정해야하고 해상도에 따라 변화하기때문에 스마트 기기에선 제대로 나오지 않는다.
+             */
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        div#parentBox {
+            /* 부모의 여역에 flex를 주면 내부는 자동 inline-block로 변경된다. */
+            display: flex;
+            /* 
+                center : 좌우 가운데 정렬 
+                space-between : 한 라인에 맞게 일정한 간격으로 객체를 배치한다.
+                space-around : 가장 왼쪽과 오른쪽까지 일정한 간격으로 객체를 배치
+            */
+            justify-content: space-around;
+            /* 
+                center 위아래 가운데 정렬 
+                flex-start 해당객체 번위의 맨위 flex-start 해당객체 번위의 맨아래 
+            */
+            align-items: flex-start;
+            /* 위아래로 가운데 정렬이 되려면 body와 현 div의 높이값을 넣어줘야한다. */
+            height: 50%;
+            /* 
+                flex-direction을 column을 주면 1자가 되고 row를 주면 ㅡ자가 된다.
+                -reverse를 붙이게 되면 자동으로 객체를 역순으로 배치한다.
+             */
+            flex-direction: row;
+            /* flex-wrap은 flex컨테이너의 길이보다 객체의 크기가 클때 flex컨테이너를 추가하여 넘겨준다. */
+            /* flex-flow를 사용하면 flex-direction, flex-wrap를 동시에 설정 할 수 있다. */
+            /* flex-flow : flex-direction flex-wrap */
+            /* align-content flex가 적용된 객체가 많을 때 한번에 정렬 시킬 수 있다. */
+            flex-wrap: wrap;
+        }
+
+        div.childBox {
+            background-color: saddlebrown;
+            width: 188px;
+            height: 188px;
+            border: 3px solid wheat;
+        }
+
+        div.childBox2 {
+            background-color: aquamarine;
+            width: 33px;
+            height: 33px;
+            /* 값을 숫자로 넣고 flex와 center을 줌으로 써 손쉽게 페이징버튼이 가능함 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #five {
+            /* 특정 개체만 위치를 옮기려면 order을 사용해서 순서를 바꿀 수 있다. */
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div id="parentBox">
+        <div class="childBox"></div>
+        <div class="childBox"></div>
+        <div class="childBox"></div>
+        <div class="childBox"></div>
+        <div class="childBox"></div>
+        <div class="childBox"></div>
+        <div class="childBox"></div>
+        <div class="childBox"></div>
+        <div class="childBox"></div>
+        <div class="childBox"></div>
+        <div class="childBox"></div>
+        <div class="childBox"></div>
+    </div>
+    <div id="parentBox">
+        <div class="childBox2">1</div>
+        <div class="childBox2">2</div>
+        <div class="childBox2">3</div>
+        <div class="childBox2">4</div>
+        <div id="five" class="childBox2">5</div>
+        <div class="childBox2">6</div>
+        <div class="childBox2">7</div>
+        <div class="childBox2">8</div>
+        <div class="childBox2">9</div>
+        <div class="childBox2">10</div>
+    </div>
+</body>
+
+</html>
