@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>트랜지션 연습</title>
+</head>
+<style>
+    .paragraph {
+        background-color: antiquewhite;
+        font-size: 33px;
+        /* 해당 설정에 상태 변경이 일어날 때 트랜지션 효과를 추가해준다. */
+        transition: background-color 3s ease-in-out;
+    }
+
+    .paragraph:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .paragraph2 {
+        background-color: antiquewhite;
+        font-size: 33px;
+        /* all을 해주면 다른 변경사항들도 다같이 3초동안 변경된다. */
+        transition: all 3s ease-in-out;
+    }
+
+    .paragraph2:hover {
+        background-color: black;
+        color: white;
+    }
+
+    div.box {
+        width: 133px;
+        height: 133px;
+        margin: 33px 33px;
+        background-color: aqua;
+        transition: transform 2.3s ease-in-out;
+    }
+
+    div.box:hover {
+        /* transform을 이용하여 객체를 기울일 수 있다. */
+        transform: rotate(2turn) scale(.3, .3);
+    }
+
+    div.box2 {
+        width: 133px;
+        height: 133px;
+        margin: 33px 33px;
+        background-color: rgb(74, 34, 206);
+        animation: 3.3s scaleRotate infinite ease-in-out;
+    }
+
+    div.box3 {
+        width: 133px;
+        height: 133px;
+        margin: 33px 33px;
+        background-color: rgb(240, 189, 22);
+        animation: 3.3s scaleRotate2 infinite ease-in-out;
+    }
+
+    /* 애니메이션을 만들어준다. */
+    @keyframes scaleRotate {
+        from {
+            transform: none;
+        }
+
+        to {
+            transform: rotate(2turn) scale(.3, .3);
+        }
+    }
+
+    @keyframes scaleRotate2 {
+        0% {
+            transform: none;
+        }
+
+        50% {
+            transform: rotate(2turn) scale(.3, .3);
+            background-color: cornflowerblue
+        }
+
+        100% {
+            transform: none;
+        }
+    }
+</style>
+
+<body>
+    <span class="paragraph">연습용 문장</span>
+    <span class="paragraph2">연습용 문장2</span>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+
+</html>
