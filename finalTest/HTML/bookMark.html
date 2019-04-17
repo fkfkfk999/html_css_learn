@@ -48,12 +48,20 @@
         </div>
     </header>
     <!-- 페이지의 메인컨텐츠가 들어가는곳 다른 태그 하위에 두지 않아야 하고 중복컨텐츠도 넣지 않는다. -->
-    <main>
+    <main class="bookMarks">
         <ul class="bookMarks_list">
             <li class="bookMarks_bookMark bookMark">
-                <!-- 현재 파일이 아닌 여러군대서 사용할 클래스명은 -g를 붙여 전역변수라는걸 표시해두면 유지보수에 편하다. -->
-                <img src="../IMG/avatar1.jpg" alt="bj의 아바타" class="bookMark_avatar g-avatar">
-
+                <div class="bookMark_column">
+                    <!-- 현재 파일이 아닌 여러군대서 사용할 클래스명은 -g를 붙여 전역변수라는걸 표시해두면 유지보수에 편하다. -->
+                    <img src="../IMG/avatar1.jpg" alt="bj의 아바타" class="bookMark_avatar g-avatar">
+                    <div class="bookMark_content">
+                        <span class="bookMark_user-id">fkfkfk9</span>
+                        <span class="bookMark_last-vod">HTML5와 CSS3를 이용한 블로그를...</span>
+                    </div>
+                </div>
+                <div class="bookMark_column">
+                    <span class="bookMark_timestamp">어제</span>
+                </div>
             </li>
         </ul>
     </main>
