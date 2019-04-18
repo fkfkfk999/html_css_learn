@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BookMark | Final Test</title>
+    <title>favorite | Final Test</title>
     <link rel="stylesheet" href="../CSS/contests.css">
     <!-- 정의 시 fontawesome.com에서 제공하는 무료 icon들을 사용할 수 있다. -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -33,7 +33,7 @@
     <header class="header">
         <div class="header_column">
             <i class="fas fa-play-circle fa-2x"></i>
-            <h1>BookMark</h1>
+            <h1>favorite</h1>
         </div>
         <div class="header_column">
             <span class="header_right-icon">
@@ -48,19 +48,55 @@
         </div>
     </header>
     <!-- 페이지의 메인컨텐츠가 들어가는곳 다른 태그 하위에 두지 않아야 하고 중복컨텐츠도 넣지 않는다. -->
-    <main class="bookMarks">
-        <ul class="bookMarks_list">
-            <li class="bookMarks_bookMark bookMark">
-                <div class="bookMark_column">
+    <main class="favorites">
+        <!-- 헤더는 하나의 페이지에서 여러번 사용가능하다 main의 헤더를 의미한다. -->
+        <header class="favorites_header">
+            <div class="favorites_favorite favorite favorite-myInfo">
+                <div class="favorite_column">
                     <!-- 현재 파일이 아닌 여러군대서 사용할 클래스명은 -g를 붙여 전역변수라는걸 표시해두면 유지보수에 편하다. -->
-                    <img src="../IMG/avatar1.jpg" alt="bj의 아바타" class="bookMark_avatar g-avatar">
-                    <div class="bookMark_content">
-                        <span class="bookMark_user-id">fkfkfk9</span>
-                        <span class="bookMark_last-vod">HTML5와 CSS3를 이용한 블로그를...</span>
+                    <img src="../IMG/avatar1.jpg" alt="" class="favorite_avatar g-avatar">
+                    <div class="favorite_content">
+                        <span class="favorite_user-id">fkfkfk9</span>
+                        <span class="favorite_user-info">웹 개발자의 웹개발 정보 전달</span>
                     </div>
                 </div>
-                <div class="bookMark_column">
-                    <span class="bookMark_timestamp">어제</span>
+            </div>
+        </header>
+        <div class="hot_vod-user-id">
+            <h5 class="favorite_title">추천 BJ</h5>
+            <div class="favorites_favorite favorite">
+                <div class="favorite_column">
+                    <img src="../IMG/avatar4.jpg" alt="" class="favorite_avatar g-avatar">
+                    <div class="favorite_content">
+                        <span class="favorite_user-id">lchf master</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="favorites_list">
+            <h5 class="favorite_title">즐겨찾기 목록</h5>
+            <li class="favorites_favorite favorite">
+                <div class="favorite_column">
+                    <img src="../IMG/avatar2.jpg" alt="" class="favorite_avatar g-avatar">
+                    <div class="favorite_content">
+                        <span class="favorite_user-id">보배</span>
+                        <span class="favorite_user-info">올바른 강아지 훈련법</span>
+                    </div>
+                </div>
+            </li>
+            <li class="favorites_favorite favorite">
+                <div class="favorite_column">
+                    <img src="../IMG/avatar3.jpg" alt="" class="favorite_avatar g-avatar">
+                    <div class="favorite_content">
+                        <span class="favorite_user-id">밤톨이</span>
+                        <span class="favorite_user-info">24시간 밤톨이 감시캠</span>
+                    </div>
+                </div>
+                <div class="favorite_column">
+                    <div class="favorite_now-onair">
+                        <span>현재 방송중 : 간식 먹...</span>
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
                 </div>
             </li>
         </ul>
@@ -75,8 +111,8 @@
                 </a>
             </li>
             <li class="menu_list_item">
-                <a href="bookMark.html" class="menu_list_item_link">
-                    <i class="far fa-bookmark fa-3x"></i>
+                <a href="favorite.html" class="menu_list_item_link">
+                    <i class="far fa-bookMark fa-3x"></i>
                 </a>
             </li>
             <li class="menu_list_item">
