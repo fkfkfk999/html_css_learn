@@ -1,130 +1,162 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Main Page | Final Test</title>
+    <link rel="stylesheet" href="../CSS/contents.css" />
+    <!-- 정의 시 fontawesome.com에서 제공하는 무료 icon들을 사용할 수 있다. -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Main Page | Final Test</title>
-  <link rel="stylesheet" href="../CSS/contents.css" />
-  <!-- 정의 시 fontawesome.com에서 제공하는 무료 icon들을 사용할 수 있다. -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-</head>
-
-<body>
-  <!-- 스크린샷 최상단의 핸드폰 상태바를 만들어준다. -->
-  <div class="top-bar">
-    <div class="top-bar__iconBox">
-      <i class="far fa-image"></i>
-      <i class="fas fa-registered"></i>
+  <body>
+    <!-- 스크린샷 최상단의 핸드폰 상태바를 만들어준다. -->
+    <div class="top-bar">
+      <div class="top-bar__iconBox">
+        <i class="far fa-image"></i>
+        <i class="fas fa-registered"></i>
+      </div>
+      <div class="top-bar__phoneInfoBox">
+        <!-- css들어있는 아이콘들 -->
+        <i class="fab fa-bluetooth-b"></i>
+        <i class="fas fa-volume-up"></i>
+        <i class="fas fa-filter"></i>
+        <span class="top-bar__battery">88% </span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <span class="top-bar__clock">오후 08:33 </span>
+      </div>
     </div>
-    <div class="top-bar__phoneInfoBox">
-      <!-- css들어있는 아이콘들 -->
-      <i class="fab fa-bluetooth-b"></i>
-      <i class="fas fa-volume-up"></i>
-      <i class="fas fa-filter"></i>
-      <span class="top-bar__battery">88% </span>
-      <i class="fas fa-battery-three-quarters"></i>
-      <span class="top-bar__clock">오후 08:33 </span>
-    </div>
-  </div>
-  <!-- 구동 앱의 헤더부분 -->
-  <header class="header">
-    <div class="header_column">
-      <i class="fas fa-play-circle fa-2x"></i>
-      <h1>MainPage</h1>
-    </div>
-    <div class="header_column">
-      <span class="header_right-icon">
-        <i class="fas fa-video fa-2x"></i>
-      </span>
-      <span class="header_right-icon">
-        <i class="fas fa-search fa-2x"></i>
-      </span>
-      <span class="header_right-icon">
-        <i class="fas fa-user fa-2x"></i>
-      </span>
-    </div>
-  </header>
-  <!-- 페이지의 메인컨텐츠가 들어가는곳 다른 태그 하위에 두지 않아야 하고 중복컨텐츠도 넣지 않는다. -->
-  <main class="vods">
-    <ul class="vods_list">
-      <li class="vods_list_vod vod">
-        <!-- 네이밍을 할 때 너무 많은 하부경로가 생긴다면 부모명으로 새로운 네이밍으로 시작한다. vods->vod -->
-        <div class="vod_column">
-          <!-- 경로나 파일명 확장자에는 되도록 소문자를 쓴다 이미 대문자로 만들어 수정 안함 -->
-          <img src="../IMG/thumbnail2.jpg" alt="영상 썸네일 사진" class="vod_thumbnail">
-        </div>
-        <div class="vod_column">
-          <img src="../IMG/avatar1.jpg" alt="사용자 등록사진" class="vod_avatar g-avatar">
-          <span class="vod_title">외할머니댁에 가는길에 들린 담양 죽녹원에서...</span>
-          <span class="vod_user-id">fkfkfk9</span>
-          <span class="vod_hit-count">100</span>
-          <span class="vod_date">2주일 전</span>
-        </div>
-        <div class="vod_column">
-          <i class="fas fa-ellipsis-v"></i>
-        </div>
-      </li>
-      <li class="vods_list_vod vod">
-        <div class="vod_column">
-          <img src="../IMG/thumbnail1.jpg" alt="영상 썸네일 사진" class="vod_thumbnail">
-        </div>
-        <div class="vod_column">
-          <img src="../IMG/avatar2.jpg" alt="사용자 등록사진" class="vod_avatar g-avatar">
-          <span class="vod_title">새로 구입한 차량을 인수 받은 후에 썬팅시공소에서...</span>
-          <span class="vod_user-id">보배</span>
-          <span class="vod_hit-count">500</span>
-          <span class="vod_date">1달 전</span>
-        </div>
-        <div class="vod_column">
-          <i class="fas fa-ellipsis-v"></i>
-        </div>
-      </li>
-      <li class="vods_list_vod vod">
-        <div class="vod_column">
-          <img src="../IMG/thumbnail3.jpg" alt="영상 썸네일 사진" class="vod_thumbnail">
-        </div>
-        <div class="vod_column">
-          <img src="../IMG/avatar3.jpg" alt="사용자 등록사진" class="vod_avatar g-avatar">
-          <span class="vod_title">수술 후에 깁스하고 앉아있는데 밤톨이가...</span>
-          <span class="vod_user-id">밤톨</span>
-          <span class="vod_hit-count">7</span>
-          <span class="vod_date">2년 전</span>
-        </div>
-        <div class="vod_column">
-          <i class="fas fa-ellipsis-v"></i>
-        </div>
-      </li>
-    </ul>
-  </main>
-  <!-- 메뉴부분 최하단이지만 메뉴이기 때문에 nav태그 -->
-  <nav class="menu">
-    <!-- 메뉴 버튼은 리스트로 만든다. -->
-    <ul class="menu_list">
-      <li class="menu_list_item">
-        <a href="index.html" class="menu_list_item_link">
-          <i class="fas fa-house-damage fa-3x"></i>
-        </a>
-      </li>
-      <li class="menu_list_item">
-        <a href="favorite.html" class="menu_list_item_link">
-          <i class="fas fa-bookmark fa-3x"></i>
-        </a>
-      </li>
-      <li class="menu_list_item">
-        <a href="pushPage.html" class="menu_list_item_link">
-          <i class="fas fa-envelope fa-3x"></i>
-        </a>
-      </li>
-      <li class="menu_list_item">
-        <a href="myPage.html" class="menu_list_item_link">
-          <i class="fas fa-folder fa-3x"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</body>
-
+    <!-- 구동 앱의 헤더부분 -->
+    <header class="header">
+      <div class="header_column">
+        <i class="fas fa-play-circle fa-2x"></i>
+        <h1 class="header_title">MainPage</h1>
+      </div>
+      <div class="header_column">
+        <span class="header_right-icon">
+          <i class="fas fa-video fa-2x"></i>
+        </span>
+        <span class="header_right-icon">
+          <i class="fas fa-search fa-2x"></i>
+        </span>
+        <span class="header_right-icon user-icon">
+          <i class="fas fa-user fa-2x"></i>
+        </span>
+      </div>
+    </header>
+    <!-- 페이지의 메인컨텐츠가 들어가는곳 다른 태그 하위에 두지 않아야 하고 중복컨텐츠도 넣지 않는다. -->
+    <main class="vods">
+      <ul class="vods_list">
+        <li class="vods_list_vod vod">
+          <!-- 네이밍을 할 때 너무 많은 하부경로가 생긴다면 부모명으로 새로운 네이밍으로 시작한다. vods->vod -->
+          <div class="vod_column">
+            <!-- 경로나 파일명 확장자에는 되도록 소문자를 쓴다 이미 대문자로 만들어 수정 안함 -->
+            <img
+              src="../IMG/thumbnail2.jpg"
+              alt="영상 썸네일 사진"
+              class="vod_thumbnail"
+            />
+          </div>
+          <div class="vod_column">
+            <img
+              src="../IMG/avatar1.jpg"
+              alt="사용자 등록사진"
+              class="vod_avatar g-avatar"
+            />
+            <span class="vod_title"
+              >외할머니댁에 가는길에 들린 담양 죽녹원에서...</span
+            >
+            <span class="vod_user-id">fkfkfk9</span>
+            <span class="vod_hit-count">100</span>
+            <span class="vod_date">2주일 전</span>
+          </div>
+          <div class="vod_column">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </li>
+        <li class="vods_list_vod vod">
+          <div class="vod_column">
+            <img
+              src="../IMG/thumbnail1.jpg"
+              alt="영상 썸네일 사진"
+              class="vod_thumbnail"
+            />
+          </div>
+          <div class="vod_column">
+            <img
+              src="../IMG/avatar2.jpg"
+              alt="사용자 등록사진"
+              class="vod_avatar g-avatar"
+            />
+            <span class="vod_title"
+              >새로 구입한 차량을 인수 받은 후에 썬팅시공소에서...</span
+            >
+            <span class="vod_user-id">보배</span>
+            <span class="vod_hit-count">500</span>
+            <span class="vod_date">1달 전</span>
+          </div>
+          <div class="vod_column">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </li>
+        <li class="vods_list_vod vod">
+          <div class="vod_column">
+            <img
+              src="../IMG/thumbnail3.jpg"
+              alt="영상 썸네일 사진"
+              class="vod_thumbnail"
+            />
+          </div>
+          <div class="vod_column">
+            <img
+              src="../IMG/avatar3.jpg"
+              alt="사용자 등록사진"
+              class="vod_avatar g-avatar"
+            />
+            <span class="vod_title"
+              >수술 후에 깁스하고 앉아있는데 밤톨이가...</span
+            >
+            <span class="vod_user-id">밤톨</span>
+            <span class="vod_hit-count">7</span>
+            <span class="vod_date">2년 전</span>
+          </div>
+          <div class="vod_column">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <!-- 메뉴부분 최하단이지만 메뉴이기 때문에 nav태그 -->
+    <nav class="menu">
+      <!-- 메뉴 버튼은 리스트로 만든다. -->
+      <ul class="menu_list">
+        <li class="menu_list_item">
+          <a href="index.html" class="menu_list_item_link">
+            <i class="fas fa-house-damage fa-3x"></i>
+          </a>
+        </li>
+        <li class="menu_list_item">
+          <a href="favorite.html" class="menu_list_item_link">
+            <i class="fas fa-bookmark fa-3x"></i>
+          </a>
+        </li>
+        <li class="menu_list_item">
+          <a href="pushPage.html" class="menu_list_item_link">
+            <i class="fas fa-envelope fa-3x"></i>
+          </a>
+        </li>
+        <li class="menu_list_item">
+          <a href="myPage.html" class="menu_list_item_link">
+            <i class="fas fa-folder fa-3x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
 </html>

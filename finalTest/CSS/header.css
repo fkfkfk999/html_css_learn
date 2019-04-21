@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 18px 20px;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 13px;
+}
+
+.header .fa-play-circle {
+  color: red;
+  font-size: 27px;
+}
+
+.header_column .header_title {
+  display: inline;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.header_right-icon {
+  margin-left: 33px;
+  font-size: 11px;
+  color: #606060;
+  cursor: pointer;
+}
+
+.user-icon {
+  color: #33691e;
+}
