@@ -1,141 +1,127 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Push Page | Final Test</title>
-    <link rel="stylesheet" href="../CSS/contents.css" />
-    <!-- 정의 시 fontawesome.com에서 제공하는 무료 icon들을 사용할 수 있다. -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-  </head>
 
-  <body>
-    <!-- 스크린샷 최상단의 핸드폰 상태바를 만들어준다. -->
-    <div class="top-bar">
-      <div class="top-bar__iconBox">
-        <i class="far fa-image"></i>
-        <i class="fas fa-registered"></i>
-      </div>
-      <div class="top-bar__phoneInfoBox">
-        <!-- css들어있는 아이콘들 -->
-        <i class="fab fa-bluetooth-b"></i>
-        <i class="fas fa-volume-up"></i>
-        <i class="fas fa-filter"></i>
-        <span class="top-bar__battery">88% </span>
-        <i class="fas fa-battery-three-quarters"></i>
-        <span class="top-bar__clock">오후 08:33 </span>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Push Page | Final Test</title>
+  <link rel="stylesheet" href="../CSS/contents.css" />
+  <!-- 정의 시 fontawesome.com에서 제공하는 무료 icon들을 사용할 수 있다. -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- 스크린샷 최상단의 핸드폰 상태바를 만들어준다. -->
+  <div class="top-bar">
+    <div class="top-bar__iconBox">
+      <i class="far fa-image"></i>
+      <i class="fas fa-registered"></i>
     </div>
-    <!-- 구동 앱의 헤더부분 -->
-    <header class="header">
-      <div class="header_column">
-        <i class="fas fa-play-circle fa-2x"></i>
-        <h1 class="header_title">PushPage</h1>
-      </div>
-      <div class="header_column">
-        <span class="header_right-icon">
-          <i class="fas fa-video fa-2x"></i>
-        </span>
-        <span class="header_right-icon">
-          <i class="fas fa-search fa-2x"></i>
-        </span>
-        <span class="header_right-icon user-icon">
-          <i class="fas fa-user fa-2x"></i>
-        </span>
-      </div>
+    <div class="top-bar__phoneInfoBox">
+      <!-- css들어있는 아이콘들 -->
+      <i class="fab fa-bluetooth-b"></i>
+      <i class="fas fa-volume-up"></i>
+      <i class="fas fa-filter"></i>
+      <span class="top-bar__battery">88% </span>
+      <i class="fas fa-battery-three-quarters"></i>
+      <span class="top-bar__clock">오후 08:33 </span>
+    </div>
+  </div>
+  <!-- 구동 앱의 헤더부분 -->
+  <header class="header">
+    <div class="header_column">
+      <i class="fas fa-play-circle fa-2x"></i>
+      <h1 class="header_title">PushPage</h1>
+    </div>
+    <div class="header_column">
+      <span class="header_right-icon">
+        <i class="fas fa-video fa-2x"></i>
+      </span>
+      <span class="header_right-icon">
+        <i class="fas fa-search fa-2x"></i>
+      </span>
+      <span class="header_right-icon user-icon">
+        <i class="fas fa-user fa-2x"></i>
+      </span>
+    </div>
+  </header>
+  <main class="push">
+    <header class="push_header">
+      <ul class="push_header-list">
+        <li class="push_header-btn header-btn">
+          <span class="header-btn_title">메시지</span>
+        </li>
+        <li class="push_header-btn header-btn">
+          <span class="header-btn_title">알림</span>
+        </li>
+      </ul>
     </header>
-    <main class="push">
-      <header class="push_header">
-        <ul class="push_header-list">
-          <li class="push_header-btn header-btn">
-            <span class="header-btn_title">메시지</span>
-          </li>
-          <li class="push_header-btn header-btn">
-            <span class="header-btn_title">알림</span>
-          </li>
-        </ul>
-      </header>
-      <ul class="push_list">
-        <!-- 즐겨찾기와 동일한 형식으로 들어가기 때문에 클래스를 그대로 사용 가능하다 -->
-        <li class="push_favorite favorite">
-          <div class="favorite_column">
-            <img
-              src="../IMG/avatar3.jpg"
-              alt=""
-              class="favorite_avatar g-avatar"
-            />
-            <div class="favorite_content">
-              <span class="favorite_user-id"
-                >밤톨이님이 업로드한 깁스 옆에 누원있는 밤톨이</span
-              >
-              <span class="favorite_user-info">1일전</span>
-            </div>
+    <ul class="push_list">
+      <!-- 즐겨찾기와 동일한 형식으로 들어가기 때문에 클래스를 그대로 사용 가능하다 -->
+      <li class="push_favorite favorite">
+        <div class="favorite_column">
+          <img src="../IMG/avatar3.jpg" alt="" class="favorite_avatar g-avatar" />
+          <div class="favorite_content">
+            <span class="favorite_user-id">밤톨이님이 업로드한 깁스 옆에 누원있는 밤톨이</span>
+            <span class="favorite_user-info">1일전</span>
           </div>
-          <div class="favorite_column">
-            <div class="favorite_thumbnail">
-              <img src="../IMG/thumbnail3.jpg" alt="" class="push_thumbnail" />
-            </div>
-            <div class="favorite_icon">
-              <i class="fas fa-ellipsis-v"></i>
-            </div>
+        </div>
+        <div class="favorite_column">
+          <div class="favorite_thumbnail">
+            <img src="../IMG/thumbnail3.jpg" alt="" class="push_thumbnail" />
           </div>
-        </li>
-        <li class="push_favorite favorite">
-          <div class="favorite_column">
-            <img
-              src="../IMG/avatar4.jpg"
-              alt=""
-              class="favorite_avatar g-avatar"
-            />
-            <div class="favorite_content">
-              <span class="favorite_user-id"
-                >lchf master님이 업로드한 아침에 마시는 녹즙 만드는법</span
-              >
-              <span class="favorite_user-info">3일전</span>
-            </div>
+          <div class="favorite_icon">
+            <i class="fas fa-ellipsis-v"></i>
           </div>
-          <div class="favorite_column">
-            <div class="favorite_thumbnail">
-              <img src="../IMG/thumbnail4.jpg" alt="" class="push_thumbnail" />
-            </div>
-            <div class="favorite_icon">
-              <i class="fas fa-ellipsis-v"></i>
-            </div>
+        </div>
+      </li>
+      <li class="push_favorite favorite">
+        <div class="favorite_column">
+          <img src="../IMG/avatar4.jpg" alt="" class="favorite_avatar g-avatar" />
+          <div class="favorite_content">
+            <span class="favorite_user-id">lchf master님이 업로드한 아침에 마시는 녹즙 만드는법</span>
+            <span class="favorite_user-info">3일전</span>
           </div>
-        </li>
-      </ul>
-    </main>
-    <!-- 메뉴부분 최하단이지만 메뉴이기 때문에 nav태그 -->
-    <nav class="menu">
-      <!-- 메뉴 버튼은 리스트로 만든다. -->
-      <ul class="menu_list">
-        <li class="menu_list_item">
-          <a href="index.html" class="menu_list_item_link">
-            <i class="fas fa-home fa-3x"></i>
-          </a>
-        </li>
-        <li class="menu_list_item">
-          <a href="favorite.html" class="menu_list_item_link">
-            <i class="fas fa-bookmark fa-3x"></i>
-          </a>
-        </li>
-        <li class="menu_list_item">
-          <a href="pushPage.html" class="menu_list_item_link">
-            <i class="fas fa-envelope-open fa-3x"></i>
-          </a>
-        </li>
-        <li class="menu_list_item">
-          <a href="myPage.html" class="menu_list_item_link">
-            <i class="fas fa-folder fa-3x"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </body>
+        </div>
+        <div class="favorite_column">
+          <div class="favorite_thumbnail">
+            <img src="../IMG/thumbnail4.jpg" alt="" class="push_thumbnail" />
+          </div>
+          <div class="favorite_icon">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </main>
+  <!-- 메뉴부분 최하단이지만 메뉴이기 때문에 nav태그 -->
+  <nav class="menu">
+    <!-- 메뉴 버튼은 리스트로 만든다. -->
+    <ul class="menu_list">
+      <li class="menu_list_item">
+        <a href="index.html" class="menu_list_item_link">
+          <i class="fas fa-home fa-2x"></i>
+        </a>
+      </li>
+      <li class="menu_list_item">
+        <a href="favorite.html" class="menu_list_item_link">
+          <i class="fas fa-bookmark fa-2x"></i>
+        </a>
+      </li>
+      <li class="menu_list_item active">
+        <a href="pushPage.html" class="menu_list_item_link">
+          <i class="fas fa-envelope-open fa-2x"></i>
+        </a>
+      </li>
+      <li class="menu_list_item">
+        <a href="myPage.html" class="menu_list_item_link">
+          <i class="fas fa-folder fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+
 </html>

@@ -5,10 +5,11 @@
   padding: 0 20px 18px 20px;
   border-bottom: 2px solid #e0e0e0;
   margin-bottom: 13px;
+  margin-top: 50px;
 }
 
 .header .fa-play-circle {
-  color: red;
+  color: rgb(119, 65, 168);
   font-size: 27px;
 }
 
@@ -26,5 +27,5 @@
 }
 
 .user-icon {
-  color: #33691e;
+  color: #fb7325;
 }

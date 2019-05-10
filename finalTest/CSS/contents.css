@@ -14,9 +14,18 @@
 @import "reset.css";
 @import "top-bar.css";
 @import "header.css";
+@import "nav-bar.css";
 /* google fonts 에서 원하는 글꼴을 가져올 수 있다. */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
-
+/* 
+  flex를 사용할 경우 space-between사용으로 박스가 짤린다면 아래 설정을 해줘야 한다. 
+  기본적으로 Box에 width를 300px를 준다면 페딩 left를 줬을때 width는 280px padding가 20px이 되야한다. 
+  하지만 브라우저는 이를 허용하지 않고 300px에 20px더해 Box를 320px로 만들어 버린다.
+  box-sizing: border-box 를 적용시키면 우리가 원하는 대로 padding값과 상관없이 box사이즈를 유지할 수 있다.
+*/
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: white;
   /* 검은색은 그냥 black를 사용하는것 보다 약간 검은색을 쓰는것이 더 좋다. 다른사이트의 검은색을 참고하자  */

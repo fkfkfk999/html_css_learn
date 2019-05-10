@@ -1,161 +1,152 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Page | Final Test</title>
-    <link rel="stylesheet" href="../CSS/contents.css" />
-    <!-- 정의 시 fontawesome.com에서 제공하는 무료 icon들을 사용할 수 있다. -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-  </head>
 
-  <body>
-    <!-- 스크린샷 최상단의 핸드폰 상태바를 만들어준다. -->
-    <div class="top-bar">
-      <div class="top-bar__iconBox">
-        <i class="far fa-image"></i>
-        <i class="fas fa-registered"></i>
-      </div>
-      <div class="top-bar__phoneInfoBox">
-        <!-- css들어있는 아이콘들 -->
-        <i class="fab fa-bluetooth-b"></i>
-        <i class="fas fa-volume-up"></i>
-        <i class="fas fa-filter"></i>
-        <span class="top-bar__battery">88% </span>
-        <i class="fas fa-battery-three-quarters"></i>
-        <span class="top-bar__clock">오후 08:33 </span>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>My Page | Final Test</title>
+  <link rel="stylesheet" href="../CSS/contents.css" />
+  <!-- 정의 시 fontawesome.com에서 제공하는 무료 icon들을 사용할 수 있다. -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- 스크린샷 최상단의 핸드폰 상태바를 만들어준다. -->
+  <div class="top-bar">
+    <div class="top-bar__iconBox">
+      <i class="far fa-image"></i>
+      <i class="fas fa-registered"></i>
     </div>
-    <!-- 구동 앱의 헤더부분 -->
-    <header class="header">
-      <div class="header_column">
-        <i class="fas fa-play-circle fa-2x"></i>
-        <h1 class="header_title">MyPage</h1>
-      </div>
-      <div class="header_column">
-        <span class="header_right-icon">
-          <i class="fas fa-video fa-2x"></i>
-        </span>
-        <span class="header_right-icon">
-          <i class="fas fa-search fa-2x"></i>
-        </span>
-        <span class="header_right-icon user-icon">
-          <i class="fas fa-user fa-2x"></i>
-        </span>
-      </div>
+    <div class="top-bar__phoneInfoBox">
+      <!-- css들어있는 아이콘들 -->
+      <i class="fab fa-bluetooth-b"></i>
+      <i class="fas fa-volume-up"></i>
+      <i class="fas fa-filter"></i>
+      <span class="top-bar__battery">88% </span>
+      <i class="fas fa-battery-three-quarters"></i>
+      <span class="top-bar__clock">오후 08:33 </span>
+    </div>
+  </div>
+  <!-- 구동 앱의 헤더부분 -->
+  <header class="header">
+    <div class="header_column">
+      <i class="fas fa-play-circle fa-2x"></i>
+      <h1 class="header_title">MyPage</h1>
+    </div>
+    <div class="header_column">
+      <span class="header_right-icon">
+        <i class="fas fa-video fa-2x"></i>
+      </span>
+      <span class="header_right-icon">
+        <i class="fas fa-search fa-2x"></i>
+      </span>
+      <span class="header_right-icon user-icon">
+        <i class="fas fa-user fa-2x"></i>
+      </span>
+    </div>
+  </header>
+  <main class="myPage">
+    <header class="myPage_main-header">
+      <h4 class="main-header_title">최근 동영상</h4>
+      <ul class="lately-vods_list">
+        <li class="lately-vod">
+          <div class="lately-vod_column">
+            <img src="../IMG/thumbnail3.jpg" alt="" class="lately-vod_thumbnail" />
+          </div>
+          <div class="lately-vod_column">
+            <span class="vod_title">깁스 옆에 누원있는 밤톨이</span>
+            <span class="vod_user-id">밤톨이</span>
+          </div>
+          <div class="lately-vod_column">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </li>
+        <li class="lately-vod">
+          <div class="lately-vod_column">
+            <img src="../IMG/thumbnail4.jpg" alt="" class="lately-vod_thumbnail" />
+          </div>
+          <div class="lately-vod_column">
+            <span class="vod_title">아침에 마시는 녹즙 만드는법</span>
+            <span class="vod_user-id">lchf master</span>
+          </div>
+          <div class="lately-vod_column">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </li>
+      </ul>
     </header>
-    <main class="myPage">
-      <header class="myPage_main-header">
-        <h4 class="main-header_title">최근 동영상</h4>
-        <ul class="lately-vods_list">
-          <li class="lately-vod">
-            <div class="lately-vod_column">
-              <img
-                src="../IMG/thumbnail3.jpg"
-                alt=""
-                class="lately-vod_thumbnail"
-              />
-            </div>
-            <div class="lately-vod_column">
-              <span class="vod_title">깁스 옆에 누원있는 밤톨이</span>
-              <span class="vod_user-id">밤톨이</span>
-            </div>
-            <div class="lately-vod_column">
-              <i class="fas fa-ellipsis-v"></i>
-            </div>
-          </li>
-          <li class="lately-vod">
-            <div class="lately-vod_column">
-              <img
-                src="../IMG/thumbnail4.jpg"
-                alt=""
-                class="lately-vod_thumbnail"
-              />
-            </div>
-            <div class="lately-vod_column">
-              <span class="vod_title">아침에 마시는 녹즙 만드는법</span>
-              <span class="vod_user-id">lchf master</span>
-            </div>
-            <div class="lately-vod_column">
-              <i class="fas fa-ellipsis-v"></i>
-            </div>
-          </li>
-        </ul>
-      </header>
-      <ul class="myPage_list">
-        <li class="myPage_item">
-          <div class="item_icon">
-            <i class="far fa-clock fa-2x"></i>
-          </div>
-          <div class="item title">
-            <span>기록</span>
-          </div>
-        </li>
-        <li class="myPage_item">
-          <div class="item_icon">
-            <i class="fas fa-arrow-circle-down fa-2x"></i>
-          </div>
-          <div class="item title">
-            <span>오프라인 동영상</span>
-          </div>
-        </li>
-        <li class="myPage_item">
-          <div class="item_icon">
-            <i class="fas fa-video fa-2x"></i>
-          </div>
-          <div class="item title">
-            <span>내 동영상</span>
-          </div>
-        </li>
-        <li class="myPage_item">
-          <div class="item_icon">
-            <i class="fas fa-shopping-bag fa-2x"></i>
-          </div>
-          <div class="item title">
-            <span>구입한 동영상</span>
-          </div>
-        </li>
-        <li class="myPage_item">
-          <div class="item_icon">
-            <i class="fas fa-clock fa-2x"></i>
-          </div>
-          <div class="item title">
-            <span>나중에 볼 동영상</span>
-          </div>
-        </li>
-      </ul>
-    </main>
-    <!-- 메뉴부분 최하단이지만 메뉴이기 때문에 nav태그 -->
-    <nav class="menu">
-      <!-- 메뉴 버튼은 리스트로 만든다. -->
-      <ul class="menu_list">
-        <li class="menu_list_item">
-          <a href="index.html" class="menu_list_item_link">
-            <i class="fas fa-home fa-3x"></i>
-          </a>
-        </li>
-        <li class="menu_list_item">
-          <a href="favorite.html" class="menu_list_item_link">
-            <i class="fas fa-bookmark fa-3x"></i>
-          </a>
-        </li>
-        <li class="menu_list_item">
-          <a href="pushPage.html" class="menu_list_item_link">
-            <i class="fas fa-envelope fa-3x"></i>
-          </a>
-        </li>
-        <li class="menu_list_item">
-          <a href="myPage.html" class="menu_list_item_link">
-            <i class="fas fa-folder-open fa-3x"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </body>
+    <ul class="myPage_list">
+      <li class="myPage_item">
+        <div class="item_icon">
+          <i class="far fa-clock fa-2x"></i>
+        </div>
+        <div class="item title">
+          <span>기록</span>
+        </div>
+      </li>
+      <li class="myPage_item">
+        <div class="item_icon">
+          <i class="fas fa-arrow-circle-down fa-2x"></i>
+        </div>
+        <div class="item title">
+          <span>오프라인 동영상</span>
+        </div>
+      </li>
+      <li class="myPage_item">
+        <div class="item_icon">
+          <i class="fas fa-video fa-2x"></i>
+        </div>
+        <div class="item title">
+          <span>내 동영상</span>
+        </div>
+      </li>
+      <li class="myPage_item">
+        <div class="item_icon">
+          <i class="fas fa-shopping-bag fa-2x"></i>
+        </div>
+        <div class="item title">
+          <span>구입한 동영상</span>
+        </div>
+      </li>
+      <li class="myPage_item">
+        <div class="item_icon">
+          <i class="fas fa-clock fa-2x"></i>
+        </div>
+        <div class="item title">
+          <span>나중에 볼 동영상</span>
+        </div>
+      </li>
+    </ul>
+  </main>
+  <!-- 메뉴부분 최하단이지만 메뉴이기 때문에 nav태그 -->
+  <nav class="menu">
+    <!-- 메뉴 버튼은 리스트로 만든다. -->
+    <ul class="menu_list">
+      <li class="menu_list_item">
+        <a href="index.html" class="menu_list_item_link">
+          <i class="fas fa-home fa-2x"></i>
+        </a>
+      </li>
+      <li class="menu_list_item">
+        <a href="favorite.html" class="menu_list_item_link">
+          <i class="fas fa-bookmark fa-2x"></i>
+        </a>
+      </li>
+      <li class="menu_list_item">
+        <a href="pushPage.html" class="menu_list_item_link">
+          <div class="push-count">9+</div>
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+      </li>
+      <li class="menu_list_item active">
+        <a href="myPage.html" class="menu_list_item_link">
+          <i class="fas fa-folder-open fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+
 </html>
