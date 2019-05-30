@@ -1,0 +1,14 @@
+.favorite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favorite .favorite_avatar {
+  width: 70px;
+  border-radius: 70%;
+}
+/* 위에는 자식에있는 클래스를 의미하지만 붙어있는 아래는 둘다 적용 시키는걸 의미 */
+.favorite_avatar.g-avatar {
+  /* width: 88px; */
+}
