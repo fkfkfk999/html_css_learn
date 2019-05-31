@@ -1,0 +1,31 @@
+.favorites_header {
+  margin: 20px 0;
+  border-bottom: 1px solid rgb(248, 246, 246);
+}
+
+.hot_vod-user-id {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(248, 246, 246);
+}
+
+.favorite_title {
+  font-weight: 700;
+  opacity: 0.6;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.favorite_now-onair {
+  font-size: 11px;
+  margin-right: 15px;
+  padding: 7px;
+  border: 2px solid turquoise;
+  border-radius: 30px;
+}
+.favorite_now-onair span {
+  opacity: 0.6;
+}
+.favorite_now-onair i {
+  color: turquoise;
+  margin-left: 3px;
+}

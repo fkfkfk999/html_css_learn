@@ -1,0 +1,28 @@
+.myPage_main-header {
+  border-bottom: 2px solid #e0e0e0;
+}
+.myPage_main-header .main-header_title,
+.myPage_main-header .lately-vods_list {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.myPage_main-header .main-header_title {
+  margin-top: 20px;
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 19px;
+}
+.lately-vod .lately-vod_column .lately-vod_thumbnail {
+  width: 200px;
+  height: 150px;
+}
+
+.myPage_main-header .lately-vods_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myPage_main-header .lately-vods_list .lately-vod_column {
+  display: flex;
+}

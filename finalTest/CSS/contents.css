@@ -16,6 +16,9 @@
 @import "header.css";
 @import "nav-bar.css";
 @import "push.css";
+@import "favorite.css";
+@import "home.css";
+@import "myPage.css";
 /* google fonts 에서 원하는 글꼴을 가져올 수 있다. */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
 /* 
@@ -41,4 +44,8 @@ a {
     a태그의 설정을 이렇게 해주면 visited도 바뀐다.
   */
   color: inherit;
+}
+
+main {
+  margin-bottom: 70px;
 }

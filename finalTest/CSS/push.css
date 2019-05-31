@@ -1,14 +1,50 @@
+.push_list {
+  margin-top: 20px;
+}
+
 .favorite {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
 
 .favorite .favorite_avatar {
-  width: 70px;
-  border-radius: 70%;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 18px;
 }
 /* 위에는 자식에있는 클래스를 의미하지만 붙어있는 아래는 둘다 적용 시키는걸 의미 */
-.favorite_avatar.g-avatar {
-  /* width: 88px; */
+.vod_avatar.big-avatar {
+  width: 77px;
+  border-radius: 50%;
+  margin-right: 18px;
+}
+
+.favorite_column {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.favorite_column .favorite_thumbnail .push_thumbnail {
+  width: 108px;
+  height: 47px;
+  margin-right: 20px;
+}
+.favorite_column .favorite_icon {
+  color: #909090;
+}
+
+.favorite_column .favorite_content .favorite_user-info {
+  font-weight: 400;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.favorite_column .favorite_content .favorite_user-id {
+  font-size: 17px;
+  color: #818181;
 }
