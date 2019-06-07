@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Shadow</title>
+    <style>
+        div.chat_box {
+
+            position: fixed;
+            /* fixed일 경우 가운데 배치하기 */
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            /******************************/
+            border-radius: 30px;
+            width: 80%;
+            background-color: aquamarine;
+            padding: 15px 23px;
+            /* 
+                box-shadow
+                해당 태그에 그림자 효과를 준다. 
+                순서대로
+                x좌표, y좌표, 색이 흐려지는 정도, 색 인듯 하다.
+            */
+            box-shadow: 5px 10px 10px rgba(238, 154, 224, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chat_box">
+        <input type="text" class="chat_input-text" />
+        <input type="button" value="전송" class="char_input-btn">
+    </div>
+</body>
+
+</html>
