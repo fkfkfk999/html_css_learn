@@ -1,0 +1,54 @@
+@import "reset.css";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+div.container {
+  width: 100%;
+  height: 880px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.container div.background {
+  width: 65%;
+  padding: 0 130px;
+  height: 800px;
+  background: linear-gradient(90deg, #b7b51b 35%, #edf0f6 30%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+div.container div.background div.phone {
+  width: 37%;
+  height: 700px;
+  border: 8px solid black;
+  border-radius: 30px;
+  background-color: #edf0f6;
+  z-index: 1;
+}
+
+.leftDot {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+}
+.rightDot {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+.dotList {
+  display: flex;
+  color: #cfdae1;
+  font-size: 1px;
+}
+.dotList li {
+  margin: 5px 5px;
+}
