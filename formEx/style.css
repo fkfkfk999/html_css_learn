@@ -1,0 +1,164 @@
+@import "reset.css";
+/* google fonts 에서 원하는 글꼴을 가져올 수 있다. */
+@import url("https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #282829;
+  font-family: "Saira Stencil One", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Saira Stencil One",
+    "Helvetica Neue", cursive;
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f7ff;
+}
+
+main {
+  width: 400px;
+  height: 750px;
+  background-color: #f8f8f8;
+  border-radius: 60px;
+  box-shadow: 0px 0px 10px 3px #a2abb9 inset, 5px 10px 40px 10px #a2abb9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0 120px 0;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+form.login-frm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 310px;
+}
+
+form.login-frm input.login-info {
+  padding: 13px 10px;
+  border: 1px solid #f6f3f3;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+form.login-frm input.login-info::placeholder {
+  opacity: 0.5;
+}
+
+form.login-frm a {
+  text-align: right;
+}
+
+a.link-tag {
+  all: unset;
+  color: #ff8080;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+form.login-frm .checkbox-column {
+  margin: 20px 0 55px 0;
+}
+
+form.login-frm .checkbox-column span {
+  cursor: pointer;
+}
+
+.checkbox-column {
+  display: block;
+  position: relative;
+  padding-left: 23px;
+}
+
+.checkbox-column input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border: 1px solid #cfcdcd;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-column input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-column .checkmark:after {
+  left: 3px;
+  top: -2px;
+  width: 5px;
+  height: 10px;
+  border: solid #e2283e;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+form.login-frm input[type="submit"] {
+  background: #e2283e;
+}
+.guidance {
+  opacity: 0.3;
+}
+
+section {
+  width: 80%;
+  height: 180px;
+}
+
+section p {
+  font-size: 14px;
+}
+
+section article.btn-box {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type="submit"],
+button {
+  border-radius: 20px;
+  font-size: 13px;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+section article.btn-box button {
+  width: 130px;
+}
+section article.btn-box button.facebook {
+  background-color: #475a96;
+}
+section article.btn-box button.twitter {
+  background-color: #5da1f2;
+}
