@@ -1,0 +1,157 @@
+@import "reset.css";
+/* google fonts 에서 원하는 글꼴을 가져올 수 있다. */
+@import url("https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+body {
+  color: #282829;
+  font-family: "Orbitron", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Orbitron", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+main {
+  position: relative;
+  width: 400px;
+  height: 750px;
+  border: 8px solid #2698f9;
+  background: linear-gradient(#ffffffda 100%, #fffefe), url(avatar2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+main div.status-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+div.status-bar span.now_time {
+  margin-left: 8px;
+}
+
+main header.main__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 130px;
+}
+
+header.main__header div a {
+  font-size: 23px;
+  opacity: 0.4;
+}
+
+main section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section article.profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section article.profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  margin-bottom: 23px;
+}
+main section article.profile h3 {
+  color: #3696e3;
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+main section article.profile span {
+  font-size: 15px;
+  margin-bottom: 33px;
+}
+
+main section article.btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+article.btn button {
+  font-size: 20px;
+  width: 48%;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+article.btn button.follow {
+  background-color: white;
+  opacity: 0.5;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+article.btn button.message {
+  background-color: #2799fa;
+  color: white;
+}
+
+main section article.sns-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+}
+
+article.sns-info div.sns__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+}
+
+main nav.menu {
+  position: absolute;
+  bottom: 35px;
+  width: 84%;
+}
+
+main nav.menu ul.menu-list {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+ul.menu-list li a.selector-icon {
+  color: #2799fa;
+}
+ul.menu-list li a.nomal-icon {
+  opacity: 0.4;
+}
+
+main div.bottom-line {
+  position: absolute;
+  bottom: 8px;
+  width: 40%;
+  border: 1px solid #9a9ea1;
+}
