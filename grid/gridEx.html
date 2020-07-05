@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display grid Ex</title>
+    <style>
+      .parent {
+        display: grid;
+        /* 각각 컬럼 사이즈를 잡아준다. */
+        grid-template-columns: 15% 50% 15% 20%;
+        grid-template-rows: 100px 230px 230px;
+        /* 열과 행 사이에 공백을 준다. */
+        /* column-gap: 1px;
+        row-gap: 1px; */
+        gap: 3px; /* 위의 효과를 한꺼번에 두개 적용 */
+      }
+
+      .child {
+        font-size: 50px;
+        background-color: midnightblue;
+        color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        Display Flex를 사용해도 강력한 기능을 사용가능하지만 사용함에 있어 문제가 있다.
+        당장 디자이너가 아닌 내가 생각해도 귀찮은게 바둑판식 게시판을 만든다고 했을때
+        데이터가 많을 경우 앞에 페이지들은 3배수나 5배수로 만들어 꽉차게 보여주면 아무문제 없지만
+        데이터가 해당 페이지 데이터를 넘지 못하는 마지막 페이지의 경우 딱맞게 들어가지 않고
+        편하게 사용하던 space-around, space-around 같은 배치가 오히려 발목잡아 레이아웃을 깨버리는 문제가 생긴다.
+        Display Grid는 이 문제를 완벽하게 해결할 수 있고 그리드 형태의 모든 레이아웃을 정말 쉽게 작성할 수 있다.
+        가장 큰 문제는 IE와의 호환성 문제가 있지만 이 또한 아래 링크의 사이트에 접속하면 호환가능한 css코드로 변경해준다.
+        https://autoprefixer.github.io/
+     -->
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">6</div>
+      <div class="child">7</div>
+      <div class="child">8</div>
+      <div class="child">9</div>
+      <div class="child">10</div>
+      <div class="child">11</div>
+      <div class="child">12</div>
+    </div>
+  </body>
+</html>
