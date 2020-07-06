@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Max & Min Content</title>
+    <style>
+      section {
+        display: grid;
+        height: 100vh;
+        /*
+            max-content는 자식의 문자열의 길이만큼 컬럼길이를 설정해준다.
+            min-content는 작은 단위에서 모든 문자를 보여준다.(문자가 튀어나가지 않는다.)
+            아래처럼 auto-fit, minmax와 같이 사용한다면 태그안의 내용과 딱 맞는 사이즈의 반응형 웹페이지 제작이 가능하다.
+        */
+        grid-template-columns: repeat(auto-fit, minmax(10%, max-content));
+        grid-template-rows: 300px;
+        gap: 10px;
+        font-size: 23px;
+      }
+      section div {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta
+        alias eveniet nisi ut distinctio
+      </div>
+      <div>
+        Ducimus hic, voluptatem, quis libero maiores explicabo reiciendis quos
+        unde distinctio, iure architecto temporibus! Libero veritatis quos
+        soluta ipsum architecto in
+      </div>
+      <div>
+        In totam labore quas, optio nostrum, suscipit unde molestias, quae animi
+        natus architecto quidem iure illum!
+      </div>
+      <div>
+        Repellendus dignissimos cum vitae minima, accusantium quo corrupti minus
+        est culpa aut! Distinctio
+      </div>
+      <div>
+        Tempore quasi numquam debitis corporis quia, iure natus consectetur
+        perspiciatis
+      </div>
+    </section>
+  </body>
+</html>

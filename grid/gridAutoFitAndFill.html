@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Auto Fit & Fill</title>
+    <style>
+      section {
+        display: grid;
+        height: 30vh;
+        grid-template-rows: 300px;
+        gap: 10px;
+        margin-bottom: 50px;
+      }
+      .fill {
+        /*
+            주의할점은 minmax로 최소값을 잡아주지 않으면 가로배치가 되지 않는다.
+            auto-fill은 현재크기로 배치한뒤 남는 공간을 빈 row로 채우는 방식이고
+            auto-fit은 현재 있는 태그들을 남은공간에 맞춰서 자동으로 늘려준다.
+          */
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      }
+      .fit {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      }
+      .fill article {
+        background-color: aquamarine;
+      }
+      .fit article {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="fill">
+      <article>1</article>
+      <article>2</article>
+      <article>3</article>
+      <article>4</article>
+      <article>5</article>
+    </section>
+    <section class="fit">
+      <article>1</article>
+      <article>2</article>
+      <article>3</article>
+      <article>4</article>
+      <article>5</article>
+    </section>
+  </body>
+</html>
