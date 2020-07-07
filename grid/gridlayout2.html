@@ -12,33 +12,47 @@
       /* 컬럼값을 설정할 때  repeat 함수를 통해 동일한 값을 반속 시킬수도 있고 auto 를 통해 남은 공간을 모두 할당 할 수 있다.*/
       grid-template-columns: repeat(2, 8%) 10% auto repeat(3, 8%);
       /* row값을 설정할 때 주의할 점은 height를 설정해주지 않는다면 %로 지정했을때 아예 안나올수도 있다는 점이다. */
-      grid-template-rows: 15% auto 10%;
-      /* 컬럼값으로 셋팅해준값과 로우값으로 셋팅해준 값을 숫자에 맞게 배열을 해주면 된다.
-        내부의 값은 넣어주고픈 박스 선택자에 grid-area로 설정해준 명칭을 넣어주면 된다. */
-      grid-template-areas:
-        "header header header header header header header"
-        ". . nav section . . ."
-        "footer footer footer footer footer footer footer";
+      grid-template-rows: 15% repeat(2, auto) 10%;
     }
 
+    /*
+      레이아웃은 각각의 자식태그에서도 설정할 수 있다.
+      grid-column-start 와 end로 해당 태그를 몇개의 행에 병합시킬지 고를 수 있다.(1부터시작)
+    */
     header {
       background-color: aquamarine;
-      grid-area: header;
+      /*       
+      grid-column-start: 1;
+      grid-column-end: 8; */
+      /*한줄로도 설정할 수 있다.
+      grid-column: 1/8;*/
+      /* span과 셀의 갯수를 추가하여 병합시킬 수도 있다. */
+      grid-column: span 7;
     }
 
     nav {
       background-color: cornflowerblue;
-      grid-area: nav;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      /* row도 같은방법으로 사용 가능하다. 
+      grid-row: 2 / 4;*/
+      grid-row: span 2;
     }
 
     section {
       background-color: pink;
-      grid-area: section;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      /* grid-row: 2 / -2; */
+      grid-row: span 2;
     }
 
     footer {
       background-color: darkslategray;
-      grid-area: footer;
+      /* grid-column-start: 1;
+      grid-column-end: 8; */
+      /* -1은 마지막을 의미한다. */
+      grid-column: 1 / -1;
     }
   </style>
 </head>
