@@ -1,0 +1,14 @@
+@import "reset.css";
+
+body {
+  background-color: gold;
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  background: url(https://cdn.pixabay.com/photo/2020/01/03/21/32/hoarfrost-4739176__340.jpg),
+    linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
+    url(https://cdn.pixabay.com/photo/2020/12/02/16/01/beech-5798039__340.jpg);
+  background-repeat: no-repeat, no-repeat, repeat;
+}

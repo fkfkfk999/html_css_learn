@@ -1,0 +1,4 @@
+/* google fonts 에서 원하는 글꼴을 가져올 수 있다. */
+@import url("https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap");
+/* css를 리셋해준다. */
+@import "reset.css";
